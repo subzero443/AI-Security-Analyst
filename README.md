@@ -1,6 +1,16 @@
 # Signal Security Analyst
 
 A local React dashboard with a FastAPI passive web-configuration scanner and a deterministic, evidence-based analysis engine.
+# Screenshots
+<p>
+  <img width="1920" height="1080" alt="Screenshot 2026-10-01 164928" src="https://github.com/user-attachments/assets/3f7cdb62-f9a5-4fa8-9264-40f259a4b5ac" />
+  <img width="1920" height="1080" alt="Screenshot 2026-10-01 165822" src="https://github.com/user-attachments/assets/9db3ee5f-d185-4c84-967c-a52c296a917d" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-01 164810" src="https://github.com/user-attachments/assets/338a16eb-ff68-4030-a6bc-c1c20e9a109c" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-01 165034" src="https://github.com/user-attachments/assets/e127dee0-66c1-409a-95bd-3726581bdf12" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-01 165047" src="https://github.com/user-attachments/assets/de697ea1-c3ce-4f42-a708-ec6e0bb72b01" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-01 164810" src="https://github.com/user-attachments/assets/16782503-35a5-400d-9895-b01d58a21d1a" />
+
+</p>
 
 ## Run locally
 
@@ -13,7 +23,6 @@ npm install
 py -3.12 -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
-p
 Start the API in one terminal:
 
 ```powershell
