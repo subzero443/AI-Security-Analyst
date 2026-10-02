@@ -1,0 +1,62 @@
+@import "@fontsource-variable/roboto";
+@import "tailwindcss";
+
+:root {
+  font-family: "Roboto Variable", Roboto, Arial, sans-serif;
+  color: #e9edef;
+  background: #0b0f14;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #0b0f14;
+  --surface: #11171d;
+  --surface-raised: #151c22;
+  --border: #252e36;
+  --border-soft: #1d252c;
+  --text: #e9edef;
+  --muted: #89959d;
+  --subtle: #606c74;
+  --green: #79d894;
+  --cyan: #64c8da;
+  --amber: #f3bd4f;
+  --red: #fb5b5b;
+}
+
+* { box-sizing: border-box; font-family: "Roboto Variable", Roboto, Arial, sans-serif !important; }
+body { min-width: 360px; min-height: 100vh; margin: 0; }
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+::selection { color: #07110b; background: var(--green); }
+.live-data-tag { border-color: rgba(121,216,148,.28); background: rgba(121,216,148,.08); color: #8ddca2; }
+.system-status.status-offline { color: #df9183; }
+.system-status.status-offline i { background: var(--red); box-shadow: 0 0 8px #fb5b5b55; }
+.risk-empty { height: 100%; display: grid; place-items: center; color: var(--muted); font-size: 10px; }
+.target-intel { margin-top: 13px; padding: 15px; }
+.target-intel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 22px; margin-top: 18px; }
+.target-intel-grid > div { min-width: 0; }
+.target-intel-label { display: block; margin-bottom: 8px; color: #74818a; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
+.intel-value { display: block; width: max-content; max-width: 100%; margin-top: 5px; overflow-wrap: anywhere; background: transparent; color: #b8d6d7; font-size: 10px; }
+.intel-port, .intel-tech { min-height: 25px; display: flex; align-items: center; gap: 8px; color: #aab5b9; font-size: 9px; }
+.intel-port code { background: transparent; color: #c4d3d5; font-size: 9px; }
+.intel-port > span, .intel-tech > span { color: #7f8b92; }
+.intel-port > b { margin-left: auto; font-size: 8px; font-weight: 600; text-transform: uppercase; }
+.port-open { color: #83d79a; }
+.port-closed { color: #d8a58b; }
+.port-filtered-or-unreachable { color: #d7bd79; }
+.intel-tech { align-items: flex-start; justify-content: space-between; gap: 12px; }
+.intel-tech strong { max-width: 65%; overflow-wrap: anywhere; color: #c4cfd2; font-weight: 500; text-align: right; }
+.intel-empty { display: block; color: #8a969c; font-size: 9px; line-height: 1.5; }
+.report-option:disabled { opacity: .48; cursor: not-allowed; }
+.report-option:disabled:hover { border-color: #252e36; background: rgba(17,23,29,.88); }
+.select-like:disabled { opacity: .5; cursor: not-allowed; }
+.target-input-mode { width: max-content; display: inline-flex; gap: 3px; padding: 3px; margin: 0 0 10px; border: 1px solid #2d383f; border-radius: 5px; background: #0d1318; }
+.target-input-mode button { min-width: 62px; height: 26px; border: 0; border-radius: 3px; background: transparent; color: #87949a; font-size: 9px; cursor: pointer; }
+.target-input-mode button.mode-active { background: #24312b; color: #a5e2b2; }
+.json-target-input { margin-bottom: 12px; }
+.json-file-row { min-height: 30px; display: flex; align-items: center; gap: 9px; margin-bottom: 6px; color: #7f8d94; font-size: 8px; }
+.json-file-button { position: relative; padding: 6px 8px; border: 1px solid #303b42; border-radius: 4px; background: #151c22; color: #c4ced1; cursor: pointer; }
+.json-file-button input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.json-target-input textarea { width: 100%; min-height: 104px; resize: vertical; padding: 10px; border: 1px solid #303b42; border-radius: 4px; background: #0d1318; color: #d5e0e2; font: 10px/1.5 Consolas, "Courier New", monospace; }
+.json-target-input textarea::placeholder { color: #6f7c83; }
+@media (max-width: 640px) { .target-intel { padding: 12px; } .target-intel-grid { grid-template-columns: 1fr; gap: 14px; } }
